@@ -2,19 +2,22 @@ package com.basics.training;
 
 public class Car {
 
-	public Car() {
-		System.out.println("Car constructor called..!!");
-	}
-	
-	public Car(String name,int seats) {
-		System.out.println("Two Parameter constructor called..!!");
-		this.name=name;
-		this.seats=seats;		
-	}
 	//class level variables
 	// static & non static or instance 
-	String name;
-	int seats;
+	String name; // null is the default value for String 
+	int seats; // 0 is the default value for int
+	
+		//default constructor 
+		public Car() {
+			System.out.println("Car constructor called..!!");
+		}
+		//two parameter constructor
+		public Car(String name,int seats) {
+			System.out.println("Two Parameter constructor called..!!");
+			this.name=name;
+			this.seats=seats;		
+		}
+		
 	
 	public void setName(String data) {
 		name=data;
