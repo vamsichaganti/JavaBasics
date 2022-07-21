@@ -12,12 +12,13 @@ public class DataTypes  {
 		
 		float f1= 32323.342342234234234f;
 		double d1=234234.12334342343;
-		
+		b1=100;
 		char ch='A';
 		boolean b=true;
 		
 		String str="Hello World..!!";
 		
+				
 		System.out.println(b1);
 		System.out.println(s1);
 		System.out.println(i1);
