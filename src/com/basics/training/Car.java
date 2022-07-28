@@ -6,6 +6,7 @@ public class Car {
 	// static & non static or instance 
 	String name; // null is the default value for String 
 	int seats; // 0 is the default value for int
+	public static final String brand="TATA";
 	
 		//default constructor 
 		public Car() {

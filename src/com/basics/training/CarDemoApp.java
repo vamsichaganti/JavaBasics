@@ -14,9 +14,26 @@ public class CarDemoApp {
 		c2.setName("yellow car");
 		c2.setSeats(4);
 		
-		System.out.println("My "+c1.getName()+" seat capacity is:"+c1.getSeats());
-		System.out.println("My "+c2.getName()+" seat capacity is:"+c2.getSeats());
+		String greeting;
+		
+		greeting=sayHi("Sai");
+		System.out.println(greeting);
+		System.out.println("My "+c1.getName()+" seat capacity is:"+c1.getSeats()+" Brand is::"+Car.brand);
+		System.out.println("My "+c2.getName()+" seat capacity is:"+c2.getSeats()+" Brand is::"+Car.brand);
 	}
 
+	String sayHello(String name) {
+		return CarDemoApp.getHai() + name;
+	}
+	
+	static String sayHi(String abc) {
+		CarDemoApp obj1 = new CarDemoApp();
+		return obj1.sayHello(abc);
+	}
+	
+	static String getHai() {
+		return "hai";
+	}
+	
 }
 
